@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="bus.js"></script>
+<script src="insert.js"></script>
 <script>
 	//loadBusData();
 	

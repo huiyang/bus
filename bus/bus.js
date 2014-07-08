@@ -58,18 +58,6 @@
 		});
 	}
 	
-	function insertBusStop(data) {
-		console.log("Inserting to database.");
-		$.ajax({
-			type: "POST",
-			data: data,
-			url: 'insert.php',
-			success: function(jqXHR) {
-				console.log('Inserted ' + data.code);
-			}
-		});
-	}
-	
 	function loadBusData(number, performInsert) {
 		
 		//$('#result').html('Loading...');
