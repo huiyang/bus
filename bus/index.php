@@ -22,6 +22,7 @@ $busstop2 = array(
 	'B0009' => 'Komtar Terminal',
 );?>
 <table class="table">
+	<tr><td><a href="<?php echo 'nearest.php'; ?>">Auto detect the nearest</a></td></tr>
 	<tr><th>To Jetty</th></tr>
 	<?php foreach ($busstop as $id => $b): ?>
 		<tr><td><a href="<?php echo 'bus.php?id='.$id; ?>"><?php echo $b; ?></a></td></tr>
