@@ -59,10 +59,9 @@
 	}
 	
 	function loadBusData(number, performInsert) {
-		
 		//$('#result').html('Loading...');
 		//for (var i = 0; i < 4; i++) {
-			var code = number.startWith('B') ? number : 'B'+pad(number, 4);
+			var code = number.toString().startWith('B') ? number : 'B'+pad(number, 4);
 			console.log(code);
 			$.ajax({
 				type: "GET",
@@ -204,4 +203,17 @@
 	function pad (str, max) {
 		str = str.toString();
 		return str.length < max ? pad("0" + str, max) : str;
+	}
+	
+	function insertBusStop(data) {
+		$.ajax({	
+			type: 'POST',
+			url: 'insert.php',
+			data: data,
+			success: function() {
+			},
+			error: function() {
+				console.log('Insert ' +  data.bus_stop_code + ' failed.');
+			}
+		});
 	}
